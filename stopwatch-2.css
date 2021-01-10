@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Poppins;
+}
+
+.timer {
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+span {
+    width: 250px;
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0 2rem;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button {
+    width: 150px;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #3331da;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgb(216, 234, 240);
+    color: #3331da;
+}
+
+button:hover {
+    color: white;
+    background-color: #3331da;
+}
+
+/* progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 2rem;
+    margin: 0 0 3rem;
+    color: #ff0062;
+    border: 1px solid #a927f5;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #a927f5;
+    transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 2px;
+    background-color: #a927f5;
+    transition: all 0.2s ease-out;
+} */
+
+.pause{
+    border: 1px solid #df2c2c;
+    background-color: #f1d2d2;
+    color: #da3131;
+}
+
+.pause:hover {
+    color: white;
+    background-color: #ee4034;
+}
+
+.continue{
+    border: 1px solid #43ad12;
+    background-color: #c6f0c1;
+    color: #37920d;
+}
+
+.continue:hover {
+    color: white;
+    background-color: #40a711;
+}
+
+/* @media screen and (max-width:900px){
+    .timer{
+        font-size: 5rem;
+        justify-content: center;
+    }
+    span{
+        width: 100px;
+        padding: 0;
+    }
+    button {
+    width: 100px;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    
+}
+} */
