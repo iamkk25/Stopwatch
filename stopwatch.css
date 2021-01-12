@@ -15,7 +15,8 @@ body {
 }
 
 .timer {
-    font-size: 10rem;
+    width: 80%;
+    font-size: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -23,30 +24,31 @@ body {
 }
 
 span {
-    width: 250px;
+    width: 100px;
     text-align: center;
-    margin: 0 1rem;
-    padding: 0 2rem;
 }
 
+.milliseconds{
+    width: 60px;
+}
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 button {
-    width: 150px;
-    padding: 1rem 2rem;
+    width: 100px;
+    padding: 0.5rem 1rem;
     margin: 0 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
     border: 1px solid #3331da;
     border-radius: 4px;
     outline: none;
-    background-color: rgb(216, 234, 240);
+    background-color: #f4fbfd;
     color: #3331da;
 }
 
@@ -55,17 +57,19 @@ button:hover {
     background-color: #3331da;
 }
 
+
 /* progress {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     width: 300px;
-    height: 2rem;
-    margin: 0 0 3rem;
+    height: 1.5rem;
+    margin: 1rem 0 2rem;
     color: #ff0062;
     border: 1px solid #a927f5;
     padding: 1px;
     border-radius: 3px;
+    display: block;
 }
 
 progress[value]::-webkit-progress-bar,
@@ -87,7 +91,7 @@ progress[value]::-moz-progress-bar {
 
 .pause{
     border: 1px solid #df2c2c;
-    background-color: #f1d2d2;
+    background-color: #f0dfdf;
     color: #da3131;
 }
 
@@ -97,30 +101,52 @@ progress[value]::-moz-progress-bar {
 }
 
 .continue{
-    border: 1px solid #43ad12;
-    background-color: #c6f0c1;
-    color: #37920d;
+    border: 1px solid #39940f;
+    background-color: #dcf3d9;
+    color: #388515;
 }
 
 .continue:hover {
     color: white;
-    background-color: #40a711;
+    background-color: #3e9118;
 }
 
-/* @media screen and (max-width:900px){
+@media screen and (min-width:47.8rem){
     .timer{
-        font-size: 5rem;
-        justify-content: center;
+        width: 90%;
+        font-size: 6rem;
     }
-    span{
-        width: 100px;
-        padding: 0;
+
+    span , .milliseconds{
+        width: 150px;
     }
+
     button {
-    width: 100px;
-    padding: 1rem 2rem;
-    margin: 0 1rem;
-    font-size: 1.4rem;
+    width: 130px;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
     
 }
-} */
+}
+
+@media screen and (min-width:59.3rem){
+    .timer{
+        font-size: 8rem;
+    }
+
+    span, .milliseconds{
+        width: 180px;
+    }
+
+    button{
+        width: 150px;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:68.75rem){
+    .timer{
+        font-size: 10rem;
+    }
+}
